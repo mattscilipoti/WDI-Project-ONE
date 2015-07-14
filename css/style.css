@@ -17,7 +17,7 @@ body {
 }
 
 .flashCard {
-  margin: 10% auto;
+  margin: 8% auto;
   width: 700px;
   height: 500px;
   background: #fff;
@@ -42,7 +42,7 @@ button {
 }
 
 .controls {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
 }

@@ -4,9 +4,15 @@ $( document ).ready(function() {
   $(".theAnswer p").addClass("hide");
 
   var index = 0; //2
+  showContent(index); //3
 
   $("#nextCard").on("click", function() {
     $(".theAnswer p").addClass("hide");
+
+    if(index === flashCards.length - 1) {
+      index = 0;
+    }
+
     index++;
     showContent(index);
   }); //4
@@ -15,7 +21,14 @@ $( document ).ready(function() {
     $(".theAnswer p").removeClass("hide");
   }); //4
 
-  showContent(index); //3
+  $("#knowCard").on("click", function() {
+    console.log(index);
+    console.log(flashCards.length)
+    flashCards.splice(index, 1)
+    console.log(flashCards.length);
+    showContent(index);
+  }); //4
+
 });
 
 /*********************************************************************
@@ -40,20 +53,20 @@ var flashCards = [
     answer: "The Cat."
   },
   {
-    question: "Donec ullamcorper nulla non metus auctor fringilla.",
-    answer: "Ligula Elit"
+    question: "When should you ever check out an unknown artists mixtape?",
+    answer: "Never"
   },
   {
-    question: "Vivamus sagittis lacus vel augue laoreet.",
-    answer: "Fermentum Commodo"
+    question: "Did OJ do it?",
+    answer: "idk"
   },
   {
-    question: "Pellentesque Mattis",
-    answer: "Structure"
+    question: "What's new?",
+    answer: "Scooby-Doo"
   },
   {
-    question: "Tellus Ligula Mollis",
-    answer: "a web page"
+    question: "Ayee",
+    answer: "ayeeeeeeeeeeee"
   },
   {
     question: "JQuery is used to do what?",
@@ -66,12 +79,16 @@ var flashCards = [
 ****************************************************/
 
 function showContent(index) {
+
+  console.log(index);
+
   var content = flashCards[index];
   var question = content.question;
   var answer = content.answer;
 
   $(".theQuestion p").html(question);
   $(".theAnswer p").html(answer);
+  $(".theAnswer p").addClass("hide");
 }
 
 
