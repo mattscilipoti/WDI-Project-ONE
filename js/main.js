@@ -1,9 +1,8 @@
 $( document ).ready(function() {
-  console.log( "ready!" ); //1
+  var index = 0;
 
   $(".theAnswer p").addClass("hide");
 
-  var index = 0; //2
   showContent(index); //3
 
   $("#nextCard").on("click", function() {
@@ -80,12 +79,12 @@ var flashCards = [
 
 function showContent(index) {
 
-  console.log(index);
-
+  var cardsLeft = (flashCards.length);
   var content = flashCards[index];
   var question = content.question;
   var answer = content.answer;
 
+  $(".trackCards .cardsLeft").html("Cards Left: " + cardsLeft);
   $(".theQuestion p").html(question);
   $(".theAnswer p").html(answer);
   $(".theAnswer p").addClass("hide");
