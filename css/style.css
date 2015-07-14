@@ -20,7 +20,7 @@ body {
 .flashCard{
   margin: 3% auto;
   width: 700px;
-  height: 500px;
+  height: 550px;
   background: #F2EBBF;
   padding: 2%;
   font-size: 64px;
@@ -65,4 +65,12 @@ button {
   border: 5px solid #F06060;
   border-radius: 10px;
   background: #F2EBBF;
+}
+
+.keyPresses {
+  width: 500px;
+  display: block;
+  margin-left: 5%;
+  margin-top: 3%;
+  list-style-type: none
 }

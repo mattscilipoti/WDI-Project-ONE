@@ -7,9 +7,11 @@ $( document ).ready(function() {
 
   $("#nextCard").on("click", function() {
     $(".theAnswer p").addClass("hide");
+
     if(index === flashCards.length - 1) {
       index = 0;
     }
+
     index++;
     showContent(index);
   });
@@ -19,7 +21,7 @@ $( document ).ready(function() {
   });
 
   $("#knowCard").on("click", function() {
-    flashCards.splice(index, 1)
+    flashCards.splice(index, 1);
     showContent(index);
   });
 
@@ -119,37 +121,8 @@ function showContent(index) {
   var question = content.question;
   var answer = content.answer;
 
-  $(".trackCards .cardsLeft").html("Cards Left: " + cardsLeft);
+  $(".trackCards .cardsLeft").html("Cards Left: " + cardsLeft + "/19");
   $(".theQuestion p").html(question);
   $(".theAnswer p").html(answer);
   $(".theAnswer p").addClass("hide");
 }
-
-
-/****************************
-* COMMENTS ON CODE SECTIONS *
-*****************************/
-
-/* 1
-The code above wraps the code below and only initializes it once
-the page is fully rendered and loaded, once that occurs, 'ready'
-is printed to the console and the rest of the code executes. */
-
-/* 2
-This variable acts as a counter, it starts off at 0,
-which is also the index for the first item in any array.
-We will pass this index as an argument of the 'showQnA'
-function before the .ready function ends. */
-
-/* 3
-This function call occurs once the page is completely loaded
-the showQnA function fills in the appropriete data on the
-index card. This data comes from the array of objects 'flashCards'
-and what data is being passed depends on what the index is. */
-
-/* 4
-The code sets up an event listener using jQuery.
-Since the user will only click next once the first card has been
-reviewed, this code adds 1 to the index, which controls what
-content will be displayed based on index's corresponding object
-in 'flashCards' then calls 'showQnA' with the new index. */
