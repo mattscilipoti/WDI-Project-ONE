@@ -3,30 +3,25 @@ $( document ).ready(function() {
 
   $(".theAnswer p").addClass("hide");
 
-  showContent(index); //3
+  showContent(index);
 
   $("#nextCard").on("click", function() {
     $(".theAnswer p").addClass("hide");
-
     if(index === flashCards.length - 1) {
       index = 0;
     }
-
     index++;
     showContent(index);
-  }); //4
+  });
 
   $("#showCard").on("click", function() {
     $(".theAnswer p").removeClass("hide");
-  }); //4
+  });
 
   $("#knowCard").on("click", function() {
-    console.log(index);
-    console.log(flashCards.length)
     flashCards.splice(index, 1)
-    console.log(flashCards.length);
     showContent(index);
-  }); //4
+  });
 
 });
 
@@ -36,41 +31,81 @@ $( document ).ready(function() {
 
 var flashCards = [
   {
-    question: "What is HTML used for?",
-    answer: "Structure"
+    question: "List the 5 JS data types",
+    answer: "Numbers, Strings, Booleans, Undefined, Null"
   },
   {
-    question: "What is main purpose of CSS?",
-    answer: "Style the elements of a web page"
+    question: "We store data types in...",
+    answer: "variables"
   },
   {
-    question: "JQuery is an example of a...",
-    answer: "Javascript library"
+    question: "What is the meaning of dynamic",
+    answer: "a variable can switch between data types."
   },
   {
-    question: "Who's in the hat?",
-    answer: "The Cat."
+    question: "What does Modulus do?",
+    answer: "Returns the remainder of a division operation."
   },
   {
-    question: "When should you ever check out an unknown artists mixtape?",
-    answer: "Never"
+    question: "What does NaN mean?",
+    answer: "Not a number"
   },
   {
-    question: "Did OJ do it?",
-    answer: "idk"
+    question: "What function can you use to test whether a value is a valid number using?",
+    answer: "isNaN function"
   },
   {
-    question: "What's new?",
-    answer: "Scooby-Doo"
+    question: "What are arrays?",
+    answer: "Ordered collection of related data types."
   },
   {
-    question: "Ayee",
-    answer: "ayeeeeeeeeeeee"
+    question: "How are arrays orginized?",
+    answer: "by index."
   },
   {
-    question: "JQuery is used to do what?",
-    answer: "select elements on the page"
-  }
+    question: "How are Objects orginized?",
+    answer: "Properties are stored as key-value pairs."
+  },
+  {
+    question: "Variable names should be named how?",
+    answer: "named using camelCase lettering."
+  },
+  {
+    question: "what’s a function?",
+    answer: "Code wraped in a value, that can be re-used."
+  },
+  {
+    question: "What's a method?",
+    answer: "Methods are functions that are attached to some object."
+  },
+  {
+    question: "What is the programming interface for HTML called?",
+    answer: "The Document Object Model."
+  },
+  {
+    question: "Each web page loaded in the browser has its own...",
+    answer: "document object."
+  },
+  {
+    question: "Using JS what method would you use select a tag that contained an ID?",
+    answer: ".getElementById"
+  },
+  {
+    question: "How would you listen for an event?",
+    answer: "the addEventListener method"
+  },
+  {
+    question: "List all the falsey values",
+    answer: "false, zero, empty string, null, undefined, NaN"
+  },
+  {
+    question: "The mechanism that alows you to compare values?",
+    answer: "comparison operators."
+  },
+  {
+    question: "These 'things' allow you to take several paths within a program?",
+    answer: "conditionals."
+  },
 ]
 
 /***************************************************
