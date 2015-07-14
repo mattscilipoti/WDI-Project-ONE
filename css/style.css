@@ -1,11 +1,5 @@
-/*STYLES FOR THE PAGE*/
 html{
   box-sizing: border-box;
-  background-color: #eee;
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  width: 100%;
-  height: 100%;
 }
 
 *,
@@ -15,19 +9,40 @@ html{
 }
 
 body {
-  width: 80%;
+  background-color: #F5F5F5;
+  width: 75%;
   margin: 0 auto;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: 500;
 }
 
-.aFlashCard {
-  margin: 0 auto;
+.flashCard {
+  margin: 10% auto;
   width: 700px;
   height: 500px;
-  border: 1px solid black;
+  background: #fff;
   padding: 2%;
-  font-size: 24px;
+  font-size: 64px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border: 5px solid black;
+  border-radius: 10px;
 }
 
-.aFlashCard .cardAction {
-  margin-top: 6%;
+.hide {
+  display: none;
+}
+
+button {
+  width: 200px;
+  height: 70px;
+  background-color: white;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+.controls {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
