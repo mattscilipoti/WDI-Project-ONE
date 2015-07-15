@@ -26,6 +26,27 @@ $(document).ready(function() {
     showContent(index);
   });
 
+  $(document).keyup(function(e){
+    if (e.which == 38) {
+      $(".theAnswer p").removeClass("hide");
+    }
+    if (e.which == 39) {
+      $(".theAnswer p").addClass("hide");
+
+      if(index === flashCards.length - 1) {
+        index = 0;
+        showContent(index);
+      };
+
+      index++;
+      showContent(index);
+    }
+    if (e.which == 40) {
+      flashCards.splice(index, 1);
+      showContent(index);
+    };
+  });
+
 });
 
 /*********************************************************************
