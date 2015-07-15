@@ -74,3 +74,9 @@ button {
   margin-top: 3%;
   list-style-type: none
 }
+
+.tipSection {
+  bottom: 0px;
+  margin: 3% auto;
+  width: 300px;
+}
