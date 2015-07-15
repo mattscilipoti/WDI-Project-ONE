@@ -1,16 +1,20 @@
-# GA-DC: WDI, Project One | JS Flash Cards
-First Project for GA's WDI
+# GA: WDI | Project One | JS Flash Cards
 
-User Stories
+## About
 
-1. Users should be able to create a flash card
+This is the first project at WDI.
 
-2. A user should be able to edit, using text, the front of the card
+I chose to do flash cards.
 
-3. users should be able to edit the back of the card
+### User Stories
 
-4. users should be able to skip a card
+1. Users should see a rendered flash card
 
-5. users should be able to delete cards.
+2. Once the question is presented, the user should have the option to
+reveal the answer.
+
+3. Users should be able to skip a card.
+
+4. Cards that are still in the deck should continue to cycle from start to finish
 
 6. users should be able to come up on a card, then reveal the back of the card.
