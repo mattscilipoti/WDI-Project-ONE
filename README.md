@@ -1,4 +1,4 @@
-# WDI-Project-ONE
+# GA-DC: WDI, Project One | JS Flash Cards
 First Project for GA's WDI
 
 User Stories

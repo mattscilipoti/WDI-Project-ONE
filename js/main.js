@@ -18,6 +18,7 @@ $(document).ready(function() {
   });
 
   $("#showCard").on("click", function() {
+    $("#showCard").addClass("animated bounce");
     $(".theAnswer p").removeClass("hide");
   });
 
