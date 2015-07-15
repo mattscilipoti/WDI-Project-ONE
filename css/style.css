@@ -17,6 +17,22 @@ body {
   color: #5C4B51;
 }
 
+.mainHeader {
+  width: 100%;
+  height: 150px;
+  background-color: #F06060;
+  border: 5px solid #F2EBBF;
+  border-radius: 10px;
+  font-size: 64px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.mainHeader h1 {
+  position: relative;
+  margin-top: 0;
+  top: -18px;
+}
 .flashCard{
   margin: 3% auto;
   width: 700px;
