@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
   var index = 0;
 
   $(".theAnswer p").addClass("hide");
@@ -10,6 +10,7 @@ $( document ).ready(function() {
 
     if(index === flashCards.length - 1) {
       index = 0;
+      showContent(index);
     }
 
     index++;
