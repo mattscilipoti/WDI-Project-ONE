@@ -37,9 +37,9 @@ Pre-plans:
 
 ![Imgur](http://i.imgur.com/qWIdjQi.jpg)
 
-3. After that I figured out the logic and implemented the main js
+3. After that I figured out the logic and implemented it in the main js
 
-4. After the structure and logic was nearly complete I focused on styling.
+4. After the structure and logic, I focused on styling.
 
 ![Imgur](http://i.imgur.com/Z2B8Le8.png)
 
