@@ -35,4 +35,4 @@ Pre-plans:
 
 2. Next, I drew sketches on paper.
 
-![alt text](https://)
+![Imgur](http://i.imgur.com/qWIdjQi.jpg)
