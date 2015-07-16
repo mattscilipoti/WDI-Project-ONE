@@ -41,7 +41,7 @@ Pre-plans:
 
 4. After the structure and logic was nearly complete I focused on styling.
 
-[Imgur](http://i.imgur.com/Z2B8Le8.png)
+![Imgur](http://i.imgur.com/Z2B8Le8.png)
 
 [Thanks Adobe Color!](https://color.adobe.com/explore/most-popular/?time=all)
 
