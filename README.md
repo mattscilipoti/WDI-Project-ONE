@@ -31,18 +31,18 @@ Technologies Used: HTML, CSS, Javascript, JQuery.
 
 Pre-plans:
 
-1. I thought the flow of the final product should mimic that of what you experience when you actually have a deck of prewritten index cards in your hand.
+- I thought the flow of the final product should mimic that of what you experience when you actually have a deck of prewritten index cards in your hand.
 
-2. Next, I drew sketches on paper.
+- Next, I drew sketches on paper.
 
 ![Imgur](http://i.imgur.com/qWIdjQi.jpg)
 
-3. After that I figured out the logic and implemented it in the main js
+- After that I figured out the logic and implemented it in the main js
 
-4. After the structure and logic, I focused on styling.
+- After the structure and logic, I focused on styling.
 
 ![Imgur](http://i.imgur.com/Z2B8Le8.png)
 
 [Thanks Adobe Color!](https://color.adobe.com/explore/most-popular/?time=all)
 
-5. After that most of the work done to the project were minor tweaks.
+- After that most of the work done to the project were minor tweaks.
