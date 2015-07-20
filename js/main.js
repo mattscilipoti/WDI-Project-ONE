@@ -1,6 +1,7 @@
+// mms: You will find very few comments, because, well..., it is quite elequent code.  Especially for only two weeks.
 $(document).ready(function() {
   var index = 0;
-
+  // mms: good job.  Adding and removeing classes is the preferred method to change stlying.
   $(".theAnswer p").addClass("hide");
 
   showContent(index);
@@ -27,6 +28,7 @@ $(document).ready(function() {
     showContent(index);
   });
 
+  // mms: nice use of "hot keys"
   $(document).keyup(function(e){
     if (e.which == 38) {
       $(".theAnswer p").removeClass("hide");
@@ -53,7 +55,7 @@ $(document).ready(function() {
 /*********************************************************************
 * The Deck Of Cards (an array filled with object & Key: Value pairs) *
 **********************************************************************/
-
+// mms: good choice for data structure
 var flashCards = [
   {
     question: "List the 5 JS data types",
